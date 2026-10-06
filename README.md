@@ -13,6 +13,23 @@ Each method is self-contained and carries its own dependencies, upstream
 license, configurations, tests, and detailed results. Machine-readable entries
 are stored in [`registry/`](registry/).
 
+## Reproduction results
+
+The released Uformer-B checkpoints produce the following results under the
+protocols documented in [`methods/uformer`](methods/uformer):
+
+| Dataset | Checkpoint | PSNR | SSIM |
+|---|---:|---:|---:|
+| TIP2018 | Epoch 250 | 31.009843 | 0.897576 |
+| UHDM | Epoch 250 | 20.764296 | 0.773419 |
+| FHDMi | Epoch 150 | 23.486293 | 0.809517 |
+| LCDMoire | Epoch 220 | 41.902345 | 0.986314 |
+
+For reference, the Uformer supplementary material reports `29.28 / 0.917` on
+TIP18. Our TIP2018 result uses a different documented crop and preprocessing
+protocol, so it should not be treated as a strict like-for-like comparison.
+See the [full results and protocol notes](methods/uformer#results).
+
 ## Repository layout
 
 ```text
