@@ -1,5 +1,5 @@
 schema_version: 1
-repository: Running-Turtle1/uformer-b-demoireing
+repository: running-Turtle/uformer-b-demoireing
 checkpoints:
   - id: uformer-b-tip2018-epoch250
     method: uformer-b
