@@ -7,7 +7,7 @@ protocols, pretrained weights, and benchmark results.
 
 | Method | Architecture | Datasets | Code | Weights |
 |---|---|---|---|---|
-| Uformer-B | U-shaped Transformer, 50.88M parameters | TIP2018, UHDM, FHDMi, LCDMoire | [methods/uformer](methods/uformer) | Pending Hugging Face release |
+| Uformer-B | U-shaped Transformer, 50.88M parameters | TIP2018, UHDM, FHDMi, LCDMoire | [methods/uformer](methods/uformer) | [Hugging Face](https://huggingface.co/running-Turtle/uformer-b-demoireing) |
 
 Each method is self-contained and carries its own dependencies, upstream
 license, configurations, tests, and detailed results. Machine-readable entries

@@ -9,7 +9,7 @@ checkpoints:
     path: tip2018/model.safetensors
     sha256: a49cc4bdd2571ef4c2bb5a646afac18995aad92f0dbb962dbf879caf1e0f90f4
     size_bytes: 204919768
-    status: ready-to-upload
+    status: published
   - id: uformer-b-uhdm-epoch250
     method: uformer-b
     dataset: uhdm
@@ -18,7 +18,7 @@ checkpoints:
     path: uhdm/model.safetensors
     sha256: 4e7ca13c7bedba1a668c18f8118da3c997f8352abd16804ed32c7fc20246fca9
     size_bytes: 204919768
-    status: ready-to-upload
+    status: published
   - id: uformer-b-fhdmi-epoch150
     method: uformer-b
     dataset: fhdmi
@@ -27,7 +27,7 @@ checkpoints:
     path: fhdmi/model.safetensors
     sha256: f2782431a6323d09b481b542c3752e30dc6f9c99fe797765162ba1dc1d24fd5c
     size_bytes: 204919768
-    status: ready-to-upload
+    status: published
   - id: uformer-b-lcdmoire-epoch220
     method: uformer-b
     dataset: lcdmoire
@@ -36,4 +36,4 @@ checkpoints:
     path: lcdmoire/model.safetensors
     sha256: 79681fa0ca2ad144ead4478290f6b64fe0f7acea17684f65079a0c6754fcfefa
     size_bytes: 204919768
-    status: ready-to-upload
+    status: published
