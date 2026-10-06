@@ -36,6 +36,9 @@ See `configs/` for all training protocols and `scripts/` for portable launchers.
 Set `PYTHON_BIN`, `NPROC_PER_NODE`, `OUTPUT_DIR`, `RESUME`, and
 `CUDA_VISIBLE_DEVICES` as needed.
 
+To evaluate the UHDM-trained checkpoint on another dataset without fine-tuning,
+see the [Chinese cross-dataset evaluation guide](CROSS_DATASET_EVALUATION.zh-CN.md).
+
 Validate the architecture and an optional downloaded checkpoint with:
 
 ```bash

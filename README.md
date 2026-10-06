@@ -52,6 +52,9 @@ Datasets are not redistributed. Follow the dataset cards and obtain data from
 the corresponding owners. Large model weights are hosted separately and
 indexed by `registry/checkpoints.yaml` with SHA256 hashes.
 
+For a worked example using the UHDM-trained Uformer-B checkpoint on another
+dataset, see the [cross-dataset evaluation guide](methods/uformer/CROSS_DATASET_EVALUATION.zh-CN.md).
+
 ## License
 
 The repository-level utilities and metadata are MIT licensed. Vendored or
