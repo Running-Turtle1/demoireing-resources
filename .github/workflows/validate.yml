@@ -1,0 +1,18 @@
+name: validate
+on: [push, pull_request]
+jobs:
+  registry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pyyaml
+      - run: python tools/validate_registry.py
+      - run: bash -n methods/uformer/scripts/*.sh
+      - run: |
+          if rg -n '(/media/|/mnt/|/home/[^/]+/|10\.[0-9]+\.[0-9]+\.[0-9]+)' --glob '!results/**' --glob '!*.csv' --glob '!.github/workflows/validate.yml'; then
+            echo "machine-specific path found"
+            exit 1
+          fi

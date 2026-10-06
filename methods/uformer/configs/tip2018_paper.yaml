@@ -1,0 +1,9 @@
+method: uformer-b
+dataset: tip2018
+protocol: paper-supplement-reference
+status: reference-only-no-released-checkpoint
+epochs: 250
+input_size: 256
+crop: central-0.15-to-0.85
+interpolation: bilinear
+reported_metrics: {psnr: 29.28, ssim: 0.917}

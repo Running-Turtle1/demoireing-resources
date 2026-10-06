@@ -1,0 +1,11 @@
+schema_version: 1
+methods:
+  - id: uformer-b
+    name: Uformer-B
+    task: image-demoireing
+    path: methods/uformer
+    paper: https://openaccess.thecvf.com/content/CVPR2022/html/Wang_Uformer_A_General_U-Shaped_Transformer_for_Image_Restoration_CVPR_2022_paper.html
+    upstream: https://github.com/ZhendongWang6/Uformer
+    upstream_commit: 65fc970a8ffc09605faca74ed016ee93c9ad8a36
+    license: MIT
+    status: available

@@ -1,0 +1,14 @@
+schema_version: 1
+datasets:
+  - id: tip2018
+    name: TIP2018
+    card: datasets/tip2018/README.md
+  - id: uhdm
+    name: UHDM
+    card: datasets/uhdm/README.md
+  - id: fhdmi
+    name: FHDMi
+    card: datasets/fhdmi/README.md
+  - id: lcdmoire
+    name: LCDMoire
+    card: datasets/lcdmoire/README.md

@@ -1,0 +1,10 @@
+method: uformer-b
+dataset: tip2018
+protocol: uhdm-compatible
+epochs: 250
+input_size: 256
+crop: central-1/6-to-5/6-with-training-offset-6
+interpolation: bilinear
+batch_size_per_gpu: 4
+optimizer: {name: AdamW, lr: 0.0002, min_lr: 0.000001, weight_decay: 0.02}
+evaluation: {interval_epochs: 10, color_space: RGB}

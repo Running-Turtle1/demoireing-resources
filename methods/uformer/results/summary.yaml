@@ -1,0 +1,28 @@
+schema_version: 1
+results:
+  - dataset: tip2018
+    checkpoint: uformer-b-tip2018-epoch250
+    epoch: 250
+    psnr: 31.00984275714223
+    ssim: 0.8975763257852879
+    protocol: uhdm-compatible-central-crop-256-rgb
+  - dataset: uhdm
+    checkpoint: uformer-b-uhdm-epoch250
+    epoch: 250
+    images: 500
+    psnr: 20.76429589653015
+    ssim: 0.7734192918837071
+    protocol: rectangular-full-image-rgb
+  - dataset: fhdmi
+    checkpoint: uformer-b-fhdmi-epoch150
+    epoch: 150
+    psnr: 23.486292552206773
+    ssim: 0.809517436484817
+    protocol: full-resolution-tiled-rgb-uint8
+  - dataset: lcdmoire
+    checkpoint: uformer-b-lcdmoire-epoch220
+    epoch: 220
+    images: 100
+    psnr: 41.90234532008447
+    ssim: 0.9863140916824341
+    protocol: full-1024-rgb-uint8

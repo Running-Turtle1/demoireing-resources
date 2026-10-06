@@ -1,0 +1,4 @@
+method,epoch,tile_size,overlap,images,psnr,ssim,source_log
+full_1024,210,1024,0,100,41.8998,0.9864,full_1024.log
+tile512_overlap128,210,512,128,100,40.7883,0.9859,tile512_overlap128.log
+tile512_overlap0,210,512,0,100,40.5979,0.9849,tile512_overlap0.log

@@ -1,0 +1,8 @@
+method: uformer-b
+dataset: lcdmoire
+epochs: 250
+crop_size: 512
+batch_size_per_gpu: 1
+gradient_accumulation: 2
+optimizer: {name: AdamW, lr: 0.000001, weight_decay: 0.02, continuation_from_epoch: 150}
+evaluation: {mode: full, input_size: 1024, quantization: uint8, color_space: RGB}

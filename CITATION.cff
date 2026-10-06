@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite this resource repository and the original method papers used in your work."
+title: "Demoireing Resources"
+type: software
+authors:
+  - name: "Running-Turtle1"
+repository-code: "https://github.com/Running-Turtle1/demoireing-resources"
+license: MIT
