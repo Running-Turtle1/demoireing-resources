@@ -1,0 +1,3 @@
+checkpoint_id,epoch,selection,images,psnr,ssim,lpips,precision,protocol
+mbcnn-uhdm-best-epoch110,110,test-center-crop-best,500,20.22357420539856,0.7718802617192269,,fp32,unidemoire-esdnet-full-resolution-rgb
+mbcnn-uhdm-last-epoch150,150,fixed-final-epoch,500,20.00224507331848,0.7687954266965389,,fp32,unidemoire-esdnet-full-resolution-rgb

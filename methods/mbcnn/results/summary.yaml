@@ -1,0 +1,20 @@
+schema_version: 1
+results:
+  - dataset: uhdm
+    checkpoint: mbcnn-uhdm-best-epoch110
+    epoch: 110
+    selection: test-center-crop-best
+    images: 500
+    psnr: 20.22357420539856
+    ssim: 0.7718802617192269
+    lpips: null
+    protocol: unidemoire-esdnet-full-resolution-fp32-rgb
+  - dataset: uhdm
+    checkpoint: mbcnn-uhdm-last-epoch150
+    epoch: 150
+    selection: fixed-final-epoch
+    images: 500
+    psnr: 20.00224507331848
+    ssim: 0.7687954266965389
+    lpips: null
+    protocol: unidemoire-esdnet-full-resolution-fp32-rgb

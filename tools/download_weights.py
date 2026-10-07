@@ -25,13 +25,13 @@ def main():
     parser.add_argument("--output_dir", default="checkpoints")
     args = parser.parse_args()
     registry = yaml.safe_load((ROOT / "registry/checkpoints.yaml").read_text())
-    repository = registry.get("repository")
-    if not repository:
-        raise RuntimeError("checkpoint repository is not published yet")
     entries = {entry["id"]: entry for entry in registry["checkpoints"]}
     if args.checkpoint_id not in entries:
         raise KeyError(f"unknown checkpoint: {args.checkpoint_id}")
     entry = entries[args.checkpoint_id]
+    repository = entry.get("repository", registry.get("repository"))
+    if not repository:
+        raise RuntimeError("checkpoint repository is not published yet")
     source = hf_hub_download(repo_id=repository, filename=entry["path"])
     output = Path(args.output_dir) / entry["path"]
     output.parent.mkdir(parents=True, exist_ok=True)

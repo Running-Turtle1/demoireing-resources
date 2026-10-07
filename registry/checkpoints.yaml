@@ -37,3 +37,25 @@ checkpoints:
     sha256: 79681fa0ca2ad144ead4478290f6b64fe0f7acea17684f65079a0c6754fcfefa
     size_bytes: 204919768
     status: published
+  - id: mbcnn-uhdm-best-epoch110
+    method: mbcnn
+    dataset: uhdm
+    epoch: 110
+    selection: test-center-crop-best
+    format: safetensors
+    repository: running-Turtle/mbcnn-uhdm-demoireing
+    path: uhdm/best_epoch110/model.safetensors
+    sha256: 0a171b1deb4219a79b7beb55326fd20d0d1f1b5c75bd41bca7fcafeead91b29f
+    size_bytes: 56787748
+    status: published
+  - id: mbcnn-uhdm-last-epoch150
+    method: mbcnn
+    dataset: uhdm
+    epoch: 150
+    selection: fixed-final-epoch
+    format: safetensors
+    repository: running-Turtle/mbcnn-uhdm-demoireing
+    path: uhdm/last_epoch150/model.safetensors
+    sha256: ba39933410c975d5fc13f5e25da2151b1b29f078197a567b02f57a52c4503f7e
+    size_bytes: 56787748
+    status: published

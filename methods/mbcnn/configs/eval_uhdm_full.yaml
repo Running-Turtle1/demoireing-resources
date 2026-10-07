@@ -1,0 +1,17 @@
+checkpoint: null
+output_dir: outputs/mbcnn_uhdm_full
+
+data:
+  root: null
+  input_suffix: _moire.jpg
+  target_suffix: _gt.jpg
+  num_workers: 2
+  pin_memory: true
+
+evaluation:
+  precision: fp32
+  padding_multiple: 32
+  padding_values: [0.3827, 0.4141, 0.3912]
+  max_samples: null
+  compute_lpips: false
+  save_images: false

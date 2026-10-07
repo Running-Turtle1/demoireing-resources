@@ -1,0 +1,41 @@
+experiment: mbcnn_uhdm
+seed: 42
+
+data:
+  train_root: null
+  val_root: null
+  input_suffix: _moire.jpg
+  target_suffix: _gt.jpg
+  crop_size: 384
+  val_crop_size: 384
+  augment: true
+  batch_size: 1
+  val_batch_size: 1
+  num_workers: 8
+  pin_memory: true
+  persistent_workers: false
+
+training:
+  epochs: 150
+  learning_rate: 0.0001
+  betas: [0.9, 0.999]
+  weight_decay: 0.0
+  accumulation_steps: 4
+  amp: true
+  grad_clip_norm: 0.0
+  max_train_batches: null
+  scheduler:
+    name: none
+    factor: 0.5
+    patience: 4
+    threshold: 0.001
+    min_lr: 0.000001
+
+validation:
+  every_epochs: 1
+  max_samples: 100
+  save_preview: true
+
+logging:
+  log_every_batches: 20
+  output_dir: outputs/mbcnn_uhdm

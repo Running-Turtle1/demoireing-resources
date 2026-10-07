@@ -9,3 +9,12 @@ methods:
     upstream_commit: 65fc970a8ffc09605faca74ed016ee93c9ad8a36
     license: MIT
     status: available
+  - id: mbcnn
+    name: MBCNN
+    task: image-demoireing
+    path: methods/mbcnn
+    paper: https://arxiv.org/abs/2004.00406
+    upstream: https://github.com/4DVLab/UniDemoire
+    upstream_commit: 4221a0e98f0078c3f72ef1da8128642e7f02662a
+    license: MIT
+    status: available

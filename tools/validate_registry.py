@@ -19,9 +19,10 @@ def require_unique(entries, label):
 
 
 def main():
+    checkpoint_registry = load("checkpoints.yaml")
     methods = load("methods.yaml")["methods"]
     datasets = load("datasets.yaml")["datasets"]
-    checkpoints = load("checkpoints.yaml")["checkpoints"]
+    checkpoints = checkpoint_registry["checkpoints"]
     require_unique(methods, "method")
     require_unique(datasets, "dataset")
     require_unique(checkpoints, "checkpoint")
@@ -38,6 +39,13 @@ def main():
             raise RuntimeError(f"unknown method: {checkpoint['method']}")
         if checkpoint["dataset"] not in dataset_ids:
             raise RuntimeError(f"unknown dataset: {checkpoint['dataset']}")
+        repository = checkpoint.get(
+            "repository", checkpoint_registry.get("repository")
+        )
+        if checkpoint.get("status") == "published" and not repository:
+            raise RuntimeError(
+                f"published checkpoint has no repository: {checkpoint['id']}"
+            )
     print(f"validated {len(methods)} methods, {len(datasets)} datasets, {len(checkpoints)} checkpoints")
 
 
