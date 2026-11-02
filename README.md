@@ -56,6 +56,8 @@ smoke test, and report the complete evaluation protocol with every metric.
 
 ## Data and weights
 
+![AIM2019 LCDMoire2019 dataset](https://aistudio.baidu.com/datasetdetail/120505)
+
 Datasets are not redistributed. Follow the dataset cards and obtain data from
 the corresponding owners. Large model weights are hosted in method-specific
 Hugging Face repositories and indexed by `registry/checkpoints.yaml` with
