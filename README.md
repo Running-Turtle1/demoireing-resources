@@ -66,6 +66,10 @@ SHA256 hashes.
 For a worked example using the UHDM-trained Uformer-B checkpoint on another
 dataset, see the [cross-dataset evaluation guide](methods/uformer/CROSS_DATASET_EVALUATION.zh-CN.md).
 
+## Related Repository
+
+- Code: https://github.com/gusaiworld/demoire-Edit
+
 ## License
 
 The repository-level utilities and metadata are MIT licensed. Vendored or
